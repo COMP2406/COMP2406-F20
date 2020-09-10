@@ -1,4 +1,4 @@
-# COMP2406-TERM-YEAR
+# COMP2406 Fall 2020
 
 # Course Description
 Introduction to Internet application development; emphasis on computer science fundamentals of technologies underlying web applications. Topics include: scripting and functional languages, language-based virtual machines, database query languages, remote procedure calls over the Internet, and performance and security concerns in modern distributed applications.

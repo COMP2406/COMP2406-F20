@@ -1,0 +1,21 @@
+html
+	head
+		title Store Manager Product Search Results
+body
+	include ../partials/header
+	br
+	
+	each product in products
+		a(href=product.url) #{product.name}
+		br
+			
+	if current > 1
+		- let url = "http://localhost:3000/products?page=" + (current-1)
+		- if(qstring.length > 0){ url += "&" + qstring; }
+		a(href=url) Previous
+		| 
+	- url = "http://localhost:3000/products?page=" + (current+1)
+	- if(qstring.length > 0){ url += "&" + qstring; }
+	a(href=url) Next
+
+	include ../partials/footer

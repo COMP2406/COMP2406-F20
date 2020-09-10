@@ -1,0 +1,36 @@
+html
+	head
+		title Store Manager - #{product.name}
+body
+	include ../partials/header
+	br
+	
+	|Name: #{product.name}
+	br
+	|Price: #{product.price}
+	br
+	|ID: #{product.id}
+	br
+	|Stock: #{product.stock}
+	br
+	br
+	
+	-let reviewsExist = false
+	
+	if product.purchases && product.purchases.length > 0
+		|Purchased By:
+		br
+		each purchase in product.purchases
+			a(href="/users/" + purchase.buyer._id) #{purchase.buyer.name}
+			if purchase.rating
+				-reviewsExist = true
+			br
+		br
+		br
+	if reviewsExist
+		|Reviews:
+		br
+		each purchase in product.purchases
+			if purchase.rating
+				a(href="/reviews/" + purchase._id) #{purchase.summary}
+				br

@@ -1,0 +1,10 @@
+html
+	head
+		title List of Numbers
+	body
+		if nums.length > 0
+			each num in nums
+				a(href="/nums/" + num["_id"])= "Click for " + num.num
+				br
+		else
+			p There are currently no numbers stored in the database.

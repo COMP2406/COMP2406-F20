@@ -1,0 +1,18 @@
+html
+	head
+		title Store Manager Home Page
+body
+	include ../partials/header
+
+	div#main
+		h1 Welcome to the Store Manager Home Page!
+		br
+		h4= storeMotto
+		br
+		if featuredProducts.length > 0
+			h4 Featured Products:
+			ul
+			each product in featuredProducts
+				li #{product.name} for only $#{product.price}
+			
+	include ../partials/footer

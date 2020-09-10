@@ -1,0 +1,30 @@
+html
+	head
+		title #{product.name}
+	body
+		script(src="../product.js")
+		form(action="/products/" + product["_id"], method="POST")
+			|ID:
+			input#id(type="textbox" name="id" disabled value=product["_id"])
+			br
+			|Name:
+			input(type="textbox" name="name" value=product.name)
+			br
+			|Price:
+			input(type="textbox" name="price" value=product.price)
+			br
+			|Stock:
+			input(type="textbox" name="stock" value=product.stock)
+			br
+			|Product X:
+			input(type="textbox" name="x" value=product.dimensions.x)
+			br
+			|Product Y:
+			input(type="textbox" name="y" value=product.dimensions.y)
+			br
+			|Product Z:
+			input(type="textbox" name="z" value=product.dimensions.z)
+			br
+			input(type="Submit" value="Save Changes")
+			br
+		button(type="button" onclick="deleteProduct()") Delete Product

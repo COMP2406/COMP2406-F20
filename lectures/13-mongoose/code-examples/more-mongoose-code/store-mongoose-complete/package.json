@@ -1,0 +1,17 @@
+{
+  "name": "store-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ProductModel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "mongoose": "^5.7.10",
+    "pug": "^2.0.4"
+  }
+}

@@ -1,0 +1,21 @@
+html
+	head
+		title Store Manager User Search Results
+body
+	include ../partials/header
+	br
+	
+	each user in users
+		a(href="/users/" + user._id) #{user.name}
+		br
+			
+	if current > 1
+		- let url = "/users?page=" + (current-1)
+		- if(qstring.length > 0){ url += "&" + qstring; }
+		a(href=url) Previous
+		| 
+	- url = "/users?page=" + (current+1)
+	- if(qstring.length > 0){ url += "&" + qstring; }
+	a(href=url) Next
+
+	include ../partials/footer

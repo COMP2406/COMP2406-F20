@@ -1,0 +1,41 @@
+<html>
+	<head><title>Name Service</title></head>
+
+	<body>
+		Start typing a name: <input type="text" id="text"></input>
+		<div id="names"></div>
+	</body>
+
+	<script>
+		let x = 0;
+		let req = null;
+		let box = document.getElementById("text");
+		box.oninput = getNames;
+
+		function getNames(){
+			//abort an existing request if there is one, why?
+			//(two reasons I can think of)
+			req = new XMLHttpRequest();
+			req.onreadystatechange = function() {
+				if(this.readyState==4 && this.status==200){
+					let div = document.getElementById("names");
+					div.innerHTML = "";
+					let result = JSON.parse(this.responseText);
+
+					for(let i = 0; i < result.names.length; i++){
+						div.innerHTML += result.names[i] + "<br>";
+					}
+
+				}
+			}
+
+			//Making a GET request to a server on the local computer
+			//The resource requests is /names
+			//A query string is included specifying the search query
+			//The reponse should contain an object with a 'names' property
+			//The value of the 'names' property will be an array of strings
+			req.open("GET", `http://localhost:3000/names?chars=${box.value}`);
+			req.send();
+		}
+	</script>
+</html>

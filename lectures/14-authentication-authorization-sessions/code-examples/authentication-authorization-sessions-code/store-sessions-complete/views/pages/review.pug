@@ -1,0 +1,15 @@
+html
+	head
+		title Store Manager - #{review.buyer.name}'s Review of #{review.product.name}
+body
+	include ../partials/header
+	br
+	
+	p Reviewer: 
+		a(href="/users/" + review.buyer._id)= review.buyer.name
+	p Product:
+		a(href="/products/" + review.product._id)= review.product.name
+	p Rating: #{review.rating}
+	p Summary: #{review.summary}
+	p Review: #{review.review}
+	

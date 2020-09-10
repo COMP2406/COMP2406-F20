@@ -1,0 +1,22 @@
+html
+	head
+		title Store Manager Home Page
+body
+	include ../partials/header
+
+	div#main
+		h1 #{product.name}
+		p ID: #{product.id}
+		p Price: #{product.price}
+		div
+			| Featured:
+			br
+			input(type="radio" name="featured" id="isfeatured" value="true" checked=product.featured)
+			| True
+			br
+			input(type="radio" name="featured" value="false" checked=!product.featured)
+			| False
+			br
+			button(type="button" id="save") Save
+		script(src="/product.js")
+	include ../partials/footer

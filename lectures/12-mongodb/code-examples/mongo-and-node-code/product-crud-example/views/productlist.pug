@@ -1,0 +1,10 @@
+html
+	head
+		title List of Products
+	body
+		if products.length > 0
+			each product in products
+				a(href="/products/" + product["_id"])= product.name
+				br
+		else
+			p There are currently no products stored in the database.

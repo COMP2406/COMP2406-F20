@@ -1,0 +1,41 @@
+html
+	head
+		title Store Manager - #{user.name}
+body
+	include ../partials/header
+	br
+	
+	|Name: #{user.name}
+	br
+	if user.ownprofile
+		|Address: #{user.address.address}
+		br
+		|City: #{user.address.city}
+		br
+		|State: #{user.address.state}
+		br
+		|ZIP: #{user.address.zip}
+		br
+	br
+	
+	-let reviewsExist = false
+	if user.purchases
+		each purchase in user.purchases
+			if purchase.rating
+				-reviewsExist = true
+	
+	if user.ownprofile && user.purchases && user.purchases.length > 0
+		|Products Purchased:
+		br
+		each purchase in user.purchases
+			a(href="/products/" + purchase.product._id) #{purchase.product.name}
+			br
+		br
+		br
+	if reviewsExist
+		|User's Reviews:
+		br
+		each purchase in user.purchases
+			if purchase.rating
+				a(href="/reviews/" + purchase._id) #{purchase.summary}
+				br

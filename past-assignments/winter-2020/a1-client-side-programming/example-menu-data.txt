@@ -1,0 +1,30 @@
+{
+  name: "The Restaurant's Name",
+  min_order: 20, //The minimum order amount required to place an order for this restaurant
+  delivery_charge: 5, //The delivery charge for this restaurant
+  menu: {
+    "Category #1": {
+      0: {
+        name: "Name of menu item with ID 0",
+        description: "Description of menu item with ID 0", 
+        price: 5.50 //Price of menu item with ID 0
+      },
+      1: {
+        name: "Name of menu item with ID 1",
+        description: "Description of menu item with ID 1", 
+        price: 7.50 //Price of menu item with ID 1
+      }
+    },
+    "Category #2": {
+	  2: {
+        name: "Name of menu item with ID 0",
+        description: "Description of menu item with ID 0", 
+        price: 5.50 //Price of menu item with ID 0
+      },
+      3: {
+        name: "Name of menu item with ID 1",
+        description: "Description of menu item with ID 1", 
+        price: 7.50 //Price of menu item with ID 1
+      }
+    }
+}

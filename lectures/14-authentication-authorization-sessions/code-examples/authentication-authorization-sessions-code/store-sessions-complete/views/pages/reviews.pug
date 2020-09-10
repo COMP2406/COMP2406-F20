@@ -1,0 +1,21 @@
+html
+	head
+		title Store Manager Reviews Search Results
+body
+	include ../partials/header
+	br
+	
+	each review in reviews
+		a(href="/reviews/" + review._id) #{review.summary}
+		br
+			
+	if current > 1
+		- let url = "/reviews?page=" + (current-1)
+		- if(qstring.length > 0){ url += "&" + qstring; }
+		a(href=url) Previous
+		| 
+	- url = "/reviews?page=" + (current+1)
+	- if(qstring.length > 0){ url += "&" + qstring; }
+	a(href=url) Next
+
+	include ../partials/footer

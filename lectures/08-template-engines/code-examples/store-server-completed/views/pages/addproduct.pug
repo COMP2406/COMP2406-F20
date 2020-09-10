@@ -1,0 +1,15 @@
+html
+	head
+		title Store Manager Home Page
+body
+	include ../partials/header
+
+	div#main
+		h1 Enter the product information
+		p Name: 
+			input(type="textbox" id="name")
+		p Price: 
+			input(type="textbox" id="price")
+		button(type="button" id="submit") Submit
+		script(src="/addproduct.js")
+	include ../partials/footer

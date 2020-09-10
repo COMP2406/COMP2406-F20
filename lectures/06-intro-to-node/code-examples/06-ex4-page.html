@@ -1,0 +1,19 @@
+<html>
+	<head><title>Sending POST</title></head>
+
+	<body>
+		<button onclick="sendPost()">Send POST</button>
+		<div id="postContent"></div>
+	</body>
+	
+	<script>
+		function sendPost(){
+			req = new XMLHttpRequest();
+			//We won't even handle the response
+			req.open("POST", `http://localhost:3000/`);
+			//Below is the body, it is in plain text
+			dave = {name: "dave", job: "instructor I"};
+			req.send(JSON.stringify(dave));
+		}
+	</script>
+</html>

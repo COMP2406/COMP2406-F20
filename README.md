@@ -7,3 +7,5 @@ Introduction to Internet application development; emphasis on computer science f
 [Lectures](/lectures): Slides, recordings, code examples and other lecture materials
 
 [Practice Problems](/practice-problems): Practice problems, contributed solutions and discussion
+
+[Student Submitted Tutorials](/submitted-tutorials): Tutorials created and submitted by other students.

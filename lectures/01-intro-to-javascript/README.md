@@ -12,3 +12,7 @@
 
 ### Related Practice Problems
 1. [Practice Problems](../../practice-problems/01-basic-javascript-html-css)
+
+
+### Submitted Lecture Notes
+1. [Lecture Notes](lecture-notes)

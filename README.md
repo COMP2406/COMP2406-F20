@@ -9,3 +9,5 @@ Introduction to Internet application development; emphasis on computer science f
 [Practice Problems](/practice-problems): Practice problems, contributed solutions and discussion
 
 [Student Submitted Tutorials](/submitted-tutorials): Tutorials created and submitted by other students.
+
+[Student Submitted Practice Problems](/submitted-problems): Practice problems submitted by other students, as well as solutions to those problems submitted by students.

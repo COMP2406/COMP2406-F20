@@ -2,7 +2,7 @@
 ### Submitted by: Dave McKenney (you can include this but don't need to, as long as the directory name matches your cuLearn name)
 
 ### Summary:
-This is not a good summary but should give you an idea of the directory/file structure you will need to create. For real lecture notes, you should at least provide more detail of the overall lecture content, your own explanation of key concepts, and some reflection/thought on some of the problems that were discussed.
+This is ***not*** a good summary but should give you an idea of the directory/file structure you will need to create. For real lecture notes, you should at least provide more detail of the overall lecture content, your own explanation of key concepts, and some reflection/thought on some of the problems that were discussed.
 
 ### Key Topics:
 

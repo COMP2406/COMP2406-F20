@@ -11,3 +11,6 @@ Introduction to Internet application development; emphasis on computer science f
 [Student Submitted Tutorials](/submitted-tutorials): Tutorials created and submitted by other students.
 
 [Student Submitted Practice Problems](/submitted-problems): Practice problems submitted by other students, as well as solutions to those problems submitted by students.
+
+# Permissions
+ You will not be able to commit to the master branch, however you can create another branch, commit, and submit a PR

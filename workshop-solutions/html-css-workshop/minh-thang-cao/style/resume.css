@@ -1,0 +1,67 @@
+html * {
+  font-family: Arial !important;
+}
+
+body {
+  transform-origin: 0 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header, .page-header {
+  background-color: #E8EEF8;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 190px;
+}
+
+.header-text {
+  color: #4472c4;
+}
+
+#body {
+  flex: 2 1 auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  padding: 10px;
+  width: 300px;
+  border-right: solid 1px #4472c4;
+}
+
+#right {
+  padding: 10px;
+  padding-left: 20px;
+  flex: 2;
+}
+
+.page-header {
+  height: 80px;
+}
+
+.date {
+  float: right;
+}
+
+.maker {
+  font-size: large;
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  float: right;
+}
+
+.home-link {
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  color: #4472c4;
+  position: absolute;
+  right: 30px;
+  float: right;
+  top: 20px;
+}

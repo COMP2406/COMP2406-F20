@@ -1,0 +1,22 @@
+Member: Dmitry Ivanov (101156077)
+Discussion Organizer: Clark Bains
+
+## Notes for Session 1 (Sept. 19)
+
+Personal Contributions:
+- Asked about the advantages of various CSS size units (px, %, em etc.)
+- Asked about the best way to animate HTML elements
+- Provided an explaination of the concept of keyframes
+- Asked for clarification on the "Game Replay" requirement in the Connect 4 project
+- Asked about the importance of ensuring that JS-generated HTML is well formatted and readable
+
+Personal Take-aways:
+- Bootstrap is essentially a CSS library which will minimize the tedious and pedantic type of styling
+- CSS can use relative or absolute size units (mainly px and %)
+- % can be used to create a flexible webpage whereas % should be used sparingly for minor visual touches
+- CSS can be used to animate elements with keyframe-like behavior
+- JS-generated HTML (to make annoying grids or tables etc.) can be made to look decent when viewed in source with not very much effort
+- JSON is a nice way of turning JS objects into strings (useful for databases)
+- GET and POST are two of the most important commands when communicating with databases
+- AJAX is an asynchronous way of updating your webpage contents without reloading
+- Websockets are a more efficient way for servers to send news to users since it revolves around listening rather than constant requesting

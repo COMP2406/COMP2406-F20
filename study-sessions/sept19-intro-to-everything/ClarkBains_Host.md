@@ -24,10 +24,8 @@ Participants:
 - Boris Grigorenko
 
 Pending Summaries from
-- Sara Rwentambo
 - Emma Chadwick
 - Alireza Teimoori
-- Dmitry Ivanov
 - Boris Grigorenko
 - Allison Entecott
 - Lara Nkanagu

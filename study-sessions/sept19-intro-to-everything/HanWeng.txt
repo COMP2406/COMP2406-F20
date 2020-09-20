@@ -1,0 +1,44 @@
+Github Username: Han-weng
+StudentID: 101155703
+Name: Han Weng
+
+Tasks done today: Ask questions about what Ajax and Websockets are, difference between
+local JSON files and databases. 
+
+Ajax, Asynchronous JavaScript and XML, techiques used to create asnychhronous applications
+
+Web Socket; longpole; the client won't have to constantly ask the server if someone send 
+a message to it yet. Like a phone sends notifications to you that someone messaged you then
+constantly check the screen for messages.
+
+Typescript: Superset of js, better development time tool to use
+
+Browsers: different browsers can react differently to html/css/js but thats very common.
+
+firefox and chrome are pretty similar
+
+Learned about Verly.js which can be useful to mimick gravity
+
+Bootstrap is pretty useful for frontend usage
+
+JSON JavaScript Object Notation, open standard file format, and data interchange format, 
+meant to store readable data. Uses key-value style of data great way to store local data 
+without using any databases
+
+HTTP: Hypertext Transfer Protocol: gets webpages data for the server using server-client 
+model. 
+
+postman: a great website for debugging website errors and free to use
+
+REST API; Representational state transfer, for  handling  requests frontend webservice. 
+Sends responses to clients. 
+
+Local JSON file vs Database: local files for faster response but hard to organize and 
+databases are easier to organize and find data.
+
+POST is used to send data to a server to create/update a resource.
+
+GET is one of the best way to request servers for data
+
+
+

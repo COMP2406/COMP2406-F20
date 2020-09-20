@@ -1,0 +1,23 @@
+Sebastian Mason-Gomes Discussion Group One Summary:
+
+Took place from 6:00 PM to 7:30 PM (had to leave at 7:30 due to family obligations)
+
+What we discussed in general:
+
+Browser differences (Chrome vs Firefox vs others)
+
+General HTML & CSS do's and don'ts
+
+Reviewed HTML and CSS of popular webpages (Google, W3 schools, Space Jam official website)
+
+Went over what Bootstrap is (framework), WebSockets (two way protocol thing to prevent you from spamming the server), AJAX (updates webpages without reloading page, reads data from server after page has loaded))
+
+Longpoling and shortpoling.
+
+Percentages, pixels, other image things
+
+Covered what keyframes are, as well as how to do static animation
+
+Individual contributions:
+
+Reminded everyone to take notes

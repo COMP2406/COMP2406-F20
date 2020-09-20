@@ -31,7 +31,8 @@ Pending Summaries from
 - Boris Grigorenko
 - Allison Entecott
 - Lara Nkanagu
-
+# My Role
+I was the host, but I also did the majority of the talking/answering questions/demos. Topics were mostly results of tangents from questions. 
 # Topics
 We essentially covered at a shallow level everything in the first 75% of the course. Below are some topics.
 ## HTML/CSS of some sites

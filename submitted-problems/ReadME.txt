@@ -1,0 +1,1 @@
+For all of the files named TutorialOneQ#Extra, they are the completed questions with extra bonus steps, I got permission to do this from Dave McKenney. I ask the question at the top and answer it. Than explain why the purpose behind it and what skills you should be using to solve it.

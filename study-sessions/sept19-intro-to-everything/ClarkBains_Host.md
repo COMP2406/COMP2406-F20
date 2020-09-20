@@ -23,6 +23,15 @@ Participants:
 - Lara Nkanagu
 - Boris Grigorenko
 
+Pending Summaries from
+- Sara Rwentambo
+- Emma Chadwick
+- Alireza Teimoori
+- Dmitry Ivanov
+- Boris Grigorenko
+- Allison Entecott
+- Lara Nkanagu
+
 # Topics
 We essentially covered at a shallow level everything in the first 75% of the course. Below are some topics.
 ## HTML/CSS of some sites

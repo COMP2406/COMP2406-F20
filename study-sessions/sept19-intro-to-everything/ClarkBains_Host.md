@@ -21,12 +21,9 @@ Participants:
 - Saihajpreet Singh
 - Allison Entecott
 - Lara Nkanagu
-- Boris Grigorenko
 
 Pending Summaries from
-- Emma Chadwick
 - Alireza Teimoori
-- Boris Grigorenko
 - Allison Entecott
 - Lara Nkanagu
 # My Role

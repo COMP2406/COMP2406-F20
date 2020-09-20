@@ -1,0 +1,57 @@
+<!--now using css and not html table-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> My Resume </title>
+        <link href="./Picture1.png" rel="icon">
+        <style>                                             /*here is where we put css rules        can find all properties in dev tools in chrome*/
+        /*THIS IS AN EMBEDDED STYLE SHEET*/
+            h1 {
+                color:crimson;                            /* good practice to put ; after everything!!! */
+            }
+            .left{
+                float:left;
+                width:50%;                                  /*here saying want the left to be 50% of the page*/
+            }
+            #right{
+                float:left;
+                
+            }
+            footer{
+                margin-top:4000px                            /*making that huge space above the footer*/
+            }
+            a:hover{
+                color:blue;                                 /*now when hover over link they turn blue*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Resume</h1>
+                                                            <!--putting everything in a div container-->
+        <div class="left">                                  <!-- named the class left since want the links on the left, name of class can be anything-->
+            <div>
+                <a href="./content/experience.html">Work Experience</a>
+            </div>
+            <div>
+                Education
+            </div>
+            <div>
+                <a href="./content/skills.html">Skills</a>
+            </div>
+            <div>
+                Awards
+            </div>
+        </div>
+
+
+        <!--separated image form links-->
+        <div id="right">
+        <a href="./content/picture.html" target="_blank"><img src="./Picture1.png" alt="best cup"></a>
+        </div>
+
+        <footer>
+            <a href="#top">Top of Page</a>                        
+            &copy; Joe 2020                                      
+        </footer>
+    </body>
+</html>

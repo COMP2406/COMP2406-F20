@@ -1,0 +1,85 @@
+Tutorial 1 guide
+
+In this guide questions 3-5 from tutorial 1 will be explained.
+
+QUESTION 3
+
+the question asked for one console.log statement that prints a steadily increasing number of #, so I approached it using a for loop.
+
+toBePrinted = "";
+for (let i=1; i<8; i++){
+    toBePrinted += "#";
+    console.log(toBePrinted);
+}
+
+I started off with an empty string, and with every iteration, added one # to the empty string and the printed the result. therefore with every iteration the toBePrinted string grew by one #. 
+
+
+QUESTION 4
+
+question 4 was very tricky, I tried adding another function, but after a few tries, I found that I could do it by only changing the function landscape.
+	first off, I changed the return statement of landscape so that instead of returning the result, it returns nothing and just prints. I did this so that the function could output both lines, instead of just one line in result.
+	two lines of output were necessary because for the underscores to show up at the top of the line they need to have been on the line above, so I made two empty strings to start with, firstLine, which is the line at the top, and result, which is the line at the bottom
+
+function landscape() {
+    let firstLine = "";
+    let result = "";
+  
+    function flat(size) {
+      for (let count = 0; count < size; count++){
+        result += "_";													// result remained unchanged for most of the function
+        firstLine += " ";												// i added a space to firstLine whereever result had something added to it so that they would line up when they were both printed
+      }
+    }
+  
+    function hill(size) {
+      result += "/";													// here result doesnt change
+      firstLine += " ";													// firstLine gets a space, as explained above
+      for (let count = 0; count < size; count++){
+        result += " ";                                                  // here, instead of '. i replaced it with a space 
+        firstLine += "_";												// and firstLine here gets an underscore 
+      }
+      result += "\\";													// here result doesnt change
+      firstLine += " ";													// firstLine gets a space, as explained above
+    }
+  
+    //START BUILD SCRIPT
+    flat(3);
+    hill(4);
+    flat(6);
+    hill(1);
+    flat(1);
+    //END BUILD SCRIPT
+
+    console.log(firstLine);												// and then I had the function print both the firstLine and result, and the outputs lined up because spacing was taken care of above
+    console.log(result);
+
+  }
+
+  landscape();
+  
+  
+  QUESTION 5
+  
+  for question 5, it was possible to chain the steps further, but to keep it clear for me I did it in a few steps.
+  
+    // question 1
+
+    allFirstNames = students.map(student => student.fname);						// for part 1, i used the map function to get an array containing only the first names of all of the students
+    console.log(allFirstNames);													// printing the array
+
+
+    // question 2
+    goodMarksStudents = students.filter(student => student.egrade >= 80);																	// filtering the students attay to only keep the students whose egrade was over or equal to 80		
+    goodMarksStudentsNames = goodMarksStudents.map(goodMarksStudent => goodMarksStudent.fname + " " + goodMarksStudent.lname);      		// now for the students left, mapping them to obtain an array of their firstnames and lastnames separated by a space
+	console.log(goodMarksStudentsNames);																									// printing the array
+
+    // question 3
+    allFinalMarks = students.map(student => student.agrade*0.4 + student.tgrade*0.1 + student.egrade*0.5);									// taking the students array, and mapping it to a new array of the final marks of all of the students weighted according to the specification
+    allFinalMarksAdded = allFinalMarks.reduce((sum, currentValue) => (sum + currentValue));													// here i used the reduce function to get the sum of all of the final grades of the students
+    console.log(allFinalMarksAdded/students.length);																						// now I take the sum, divide it by the number of students, and rint the result.
+  
+  
+  QUESTION 6
+  
+  i found that a very useful resource for question 6 was w3schools, in the HTML section, under HTML input types.

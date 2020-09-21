@@ -24,7 +24,6 @@ Participants:
 
 Pending Summaries from
 - Alireza Teimoori
-- Allison Entecott
 - Lara Nkanagu
 # My Role
 I was the host, but I also did the majority of the talking/answering questions/demos. Topics were mostly results of tangents from questions. 

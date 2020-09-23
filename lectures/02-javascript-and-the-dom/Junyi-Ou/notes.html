@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html></html>
+    <head >
+        <title>this is lecture 3 notes and example</title>
+        <style>
+            #idExample{
+                color: pink;
+                background-color: blue;
+            }
+            .classExample{
+                color: wheat;
+                background-color: palevioletred;
+            }
+
+            
+        </style>
+        <!-- style section is specific for CSS code -->
+        <!-- by using class attributes, you can re-use your css style anywhere-->
+        <script src="notes.js">
+            
+            //note that never name your function as onclick() 
+            //, onChange() or any other names used as an event name in html
+        </script>
+    </head>
+<body onload="init()">
+    <!-- the onload attributes let you load up anything from your javascript code 
+    when your webpage opens-->
+    <div class="classExample">
+        <h2 id="idExample">i know this looks awful,
+            this is just an example of using id and onclick</h2>
+        <button onclick="onclickTest()" > click here</button>
+    </div>
+
+    <div class="classExample">
+        <h2>this is an example of using onchange attribute</h2>
+        <select name="selectExample" id="idExample2" onchange="onchangeTest(this)">
+            <!-- you can use this as an argument for your function -->
+            <option value="option1"> option1</option>
+            <option value="option2"> option2</option>
+            <option value="option3"> option3</option>
+        </select>
+        <p id="optionOut">you have choosed </p>
+    </div>
+
+    <!-- the following code are example of how event bubbling works -->
+
+    <div class="classExample" id="eventBubbleExampleDiv">
+        this is a div without event.stopPropagation();<br>
+        <span style="background-color: seashell; color: black;" id="eventBubbleExampleSpan"><br>
+            this is a span without event.stopPropagation();
+            <p id="eventBubbleExampleP">this is a paragraph without event.stopPropagation() click here!</p>
+        </span>
+    </div>
+
+    <div class="classExample" id="eventBubbleExampleDiv1">
+        this is a div without event.stopPropagation();<br>
+        <span style="background-color: seashell; color: black;" id="eventBubbleExampleSpan1"><br>
+            this is a span with event.stopPropagation() ;
+            <p id="eventBubbleExampleP1">this is a paragraph without event.stopPropagation() click here!</p>
+        </span>
+    </div>
+<!-- there are so many more event you could choose from, always google when you wanna
+your webpage to react on something
+-->
+
+
+
+</body>
+</html>
